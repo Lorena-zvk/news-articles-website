@@ -1,0 +1,194 @@
+:root {
+    --off-black: #121314;
+    --off-white: #e8e0d1;
+}
+
+body {
+    background-color: var(--off-black);
+    max-width: 2400px;
+    
+  }
+  
+.modal{
+    margin-top: 5%;
+}
+/*============= NAVIGATION =============*/
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+    background-color: var(--off-black);
+}
+.navbar img{
+    height: 5vh;
+    padding-left: 4vw;
+}
+.navbar a{
+    color: var(--off-white);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 1.5vh;
+}
+/*title animation*/
+.title{
+    width: 100vw;
+    height: 20vh;
+    position: relative;
+    margin-top: 20%;
+}
+.glitch {
+    font-size: 130px;
+    line-height: 1;
+    font-family: 'Special Elite', cursive;
+    text-decoration: none;
+    font-weight: 700;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-decoration: none;
+    color: var(--off-white);
+}
+.glitch:hover{
+    color: var(--off-white);
+    text-decoration: none;
+}
+.glitch::before { 
+        display: block;
+        content: 'Halloween';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .8;   
+        color: #0ff;
+        z-index: -1;
+}
+.glitch::after {   
+        display: block;
+        content: 'Halloween';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .8;    
+        color: #f0f;
+        z-index: -2;
+}
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-5px, 5px)
+    }
+    40% {
+        transform: translate(-5px, -5px)
+    }
+    60% {
+        transform: translate(5px, 5px)
+    }
+    80% {
+        transform: translate(5px, -5px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+.glitch::before {
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite
+}
+.glitch::after {
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+}
+
+.interview{
+    padding: 5%;
+}
+.interview hr{
+    height: .6vh;
+    color: var(--off-black);
+    background-color: var(--off-black);
+    border-radius: 25px;
+}
+.interview p{
+    font-style: italic;
+}
+/*subtitle*/
+
+.subtitle{
+    height: 20vh;
+    width: 100vw;
+    align-content: center;
+    margin-top: 50%;
+    margin-bottom: 15%;
+}
+.subtitle h1{
+    color: var(--off-white);
+    font-family: 'Road Rage', cursive;
+}
+#transition{
+    height: .6vh;
+    color: var(--off-white);
+    background-color: var(--off-white);
+    border-radius: 25px;
+}
+/*story*/
+section{
+    align-items: center;
+    width: 100vw;
+}
+
+article{
+    position: relative;
+    width: 60%;
+    left: 10%;
+    padding: 5%;
+    background-color: var(--off-white);
+    color: var(--off-black);
+    font-size: 1.2rem;
+}
+img{
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border-radius: 10%;
+}
+.modal img{
+    border-radius: 0%;
+}
+p{
+    padding: 1.5%;
+}
+h1, h3{
+    padding: 2%;
+    align-self: center;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+}
+
+
+/*MAP*/
+.MAP{
+    background-color: white;
+}
+
+
+
+footer{
+    background-color: var(--off-white);
+    opacity: 75%;
+    height: 15vh;
+}
+footer p{
+    font-size: .9rem;
+}

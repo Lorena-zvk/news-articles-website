@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e3808bbee2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.min.js"
+        integrity="sha512-O2fWHvFel3xjQSi9FyzKXWLTvnom+lOYR/AUEThL/fbP4hv1Lo5LCFCGuTXBRyKC4K4DJldg5kxptkgXAzUpvA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/images/logo.png">
+    <title>The college dream</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="navbar-brand">
+            <img src="/images/logo.png" alt="logo" class="d-inline-block align top">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="/Hoia_Baciu_forest/index.html">Hoia Baciu</a></li>
+                <li class="nav-item"><a href="/rockehuset/index.html">Rockehuset</a></li>
+                <li class="nav-item"><a href="/Student_Life/main.html">Student Life</a></li>
+                <li class="nav-item"><a href="/Halloween/index.html">Halloween</a></li>
+                <li class="nav-item"><a href="/XL_article/index.html">XL_story</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--fixed backgroung and title part-->
+    <div class="fixed-background">
+        <div class="title">
+            <div class="row py-5">
+                <div class="col-12 text-center">
+                    <div id="animation">The college dream</div>
+                    <div id="animation"><span>and why people give it up</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="story">
+        <div class="part">
+            <p>
+                Ever since we were kids, we were sold this idea of a perfect life with a linear trajectory. Go to
+                school, study, go to college, study some more and then get a good job. However, once people reach the
+                college level, many of them realize that what they were told was just an unreachable ideal, and that
+                real life is more complicated than that.
+            </p>
+            <p>
+                In Romania, this pressure to go to college can be quite heavy, since people generally believe that you
+                can’t really do anything without a degree. Kids are taught that they should pursue a career in medicine,
+                IT or other popular and well-paid fields, this way ending up taking classes that they don’t enjoy or are
+                not suitable for them.
+            </p>
+        </div>
+        <div class="interview">
+            <hr>
+            <p>
+                “I initially decided to go to college because of the pressure I felt from society, because that’s what
+                you’re ‘supposed to do’. Of course I understood that a degree is needed in order to find a good job, but
+                I felt pressured to rush into it.”
+            </p>
+        </div>
+        <div class="part">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/serban.png" id="serban">
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        says Șerban Ghiulai, a Romanian student who decided to drop out of college in his second
+                        semester because he discovered that what he was taught about architecture was not what he
+                        expected.
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Many students in Romania are the same. They choose a subject, many times at their parents’ wishes, and
+                end up dropping out and choosing something else instead, because their decision turned out to be wrong.
+            </p>
+        </div>
+    </div>
+
+    <div class="chart">
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="chartID">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div id="text">
+                    <p>
+                        In Romania, out of every 100 students that start their college journey, on average, only 26 of
+                        then actually end up graduating.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="story">
+        <div class="part">
+            <p>
+                Besides the rushed decisions, another serious problem that caused up to a 40% dropout rate between 2014
+                and 2018 in Romania is the lack of financial support for young students. There are not many cities that
+                have universities, so most people have to move from their hometown in order to complete their studies.
+                Supporting yourself becomes incredibly difficult in this scenario. The annual tuition fees for Romanian
+                colleges are between 400 and 1000 Euros. Although some of the students with the best academic results
+                are exempt from this fee, this is already a huge expense for a family with a medium income. In addition,
+                the scholarships from the government are less than 200 Euros per month, and not everybody can qualify
+                for it.
+            </p>
+        </div>
+        <div class="interview">
+            <hr>
+            <p>
+                “I have only attended one semester, and it has been online, so I haven’t encountered these kinds of
+                problems. Nevertheless, I am aware that students don’t receive a lot of support from our government and
+                I have known and heard of people that were forced to give up their studies because they were not able to
+                afford it.”
+            </p>
+        </div>
+        <div class="part">
+            <p>
+                As a comparison to show how severe this situation is, we can take a look at the life of a Norwegian
+                student. Norway and Romania’s economies are by default extremely different, the standard of living being
+                much higher in Norway than it is in Romania. Still, we can notice that tuition fees in Romania are even
+                ten times higher than they are in Norway, but the government support is about four times lower.
+            </p>
+        </div>
+        <div class="infographic">
+            <img src="img/Romanian_vs_Norwegian.png">
+        </div>
+        <div class="part">
+            <p>
+                This being said, we can clearly see that higher education is “expected” in Romania, but it is not
+                supported. In a country with around 19.2 million people, the college students represent only 1.9% of the
+                population, and even among these few students, only 26.3% of them actually finish their education and
+                get a college degree.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>@Newsroom2Group1</p>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
